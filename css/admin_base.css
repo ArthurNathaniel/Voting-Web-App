@@ -1,0 +1,59 @@
+   .sidebar {
+       height: 100%;
+       width: 250px;
+       position: fixed;
+    background-color: rgb(199, 24, 24);
+       padding-top: 20px;
+       transition: margin-left 0.3s;
+   }
+
+   .sidebar a {
+       padding: 10px 15px;
+       text-decoration: none;
+       font-size: 18px;
+       color: white;
+       display: block;
+   }
+
+   .sidebar a:hover {
+       background-color: rgba(233, 122, 122, 0.978);
+   }
+
+   .logout {
+       position: absolute;
+       bottom: 30px;
+       width: 100%;
+   }
+   .ds input{
+    border: 2px solid;
+   }
+
+   /* Content Styles */
+   .content {
+       margin-left: 250px;
+       padding: 16px;
+       transition: margin-left 0.3s;
+   }
+
+   /* Toggle Button Styles */
+   #toggle-btn {
+       display: none;
+   }
+
+   @media (max-width: 768px) {
+       .sidebar {
+           margin-left: -250px;
+       }
+
+       .content {
+           margin-left: 0;
+       }
+
+       #toggle-btn {
+           display: block;
+           position: fixed;
+           top: 10px;
+           left: 10px;
+           z-index: 1;
+       }
+   }

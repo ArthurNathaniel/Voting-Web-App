@@ -1,0 +1,35 @@
+.vote-all{
+    padding: 0 10%;
+}
+
+.vote-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.vote-card{
+    width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 40px;
+}
+.vote-image{
+height: 300px;
+width: 100%;
+background-position:center;
+background-size: cover;
+background-repeat: no-repeat;
+background-image: url(../images/profile.jpg);
+}
+
+.vote-info{
+    padding: 0 5%;
+    padding-block: 20px;
+}
+
+.vote-btn button{
+    background-color: rgb(199, 24, 24);
+    width: 100%;
+    height: 50px;
+    border: none;
+    margin-top: 20px;
+    color: #fff;
+}
