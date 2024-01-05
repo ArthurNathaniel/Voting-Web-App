@@ -25,6 +25,7 @@ $result = $conn->query($sql);
 </head>
 
 <body>
+
     <div class="vote-all">
         <div class="vote-grid">
             <?php
@@ -43,6 +44,16 @@ $result = $conn->query($sql);
                 echo '</div>';
             }
             ?>
+        </div>
+
+
+    </div>
+    <div class="log">
+        <a href="log.php">Logout</a>
+    </div>
+    <div class="footer">
+        <div class="footer-title">
+            <h2>NSS Voting Web Application</h2>
         </div>
     </div>
 </body>
