@@ -25,37 +25,29 @@ $result = $conn->query($sql);
 </head>
 
 <body>
+    <?php include 'header.php' ?>
 
-    <div class="vote-all">
-        <div class="vote-grid">
-            <?php
-            // Display contestants dynamically
-            while ($row = $result->fetch_assoc()) {
-                echo '<div class="vote-card">';
-                // Set the background image for vote-image
-                echo '<div class="vote-image" style="background-image: url(\'images/' . $row['image_filename'] . '\');"></div>';
-                echo '<div class="vote-info">';
-                echo '<h5>' . $row['name'] . '</h5>';
-                echo '<p>' . $row['position'] . '</p>';
-                echo '<div class="vote-btn">';
-                echo '<button>Vote</button>';
-                echo '</div>';
-                echo '</div>';
-                echo '</div>';
-            }
-            ?>
+    <footer>
+        <div class="footer_bg">
+            <div class="ft-title">
+                <div class="ft_logo"></div>
+                <h4>NSS Voting App</h4>
+                <p>
+                    Your voice matters! Thank you for using our voting web app to make your opinions count.
+                </p>
+            </div>
+            <div class="footer-last">
+                <span>
+                    All Copyright &copy; Reserved
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>
+                    | Nathstack Tech
+                </span>
+            </div>
         </div>
+    </footer>
 
-
-    </div>
-    <div class="log">
-        <a href="log.php">Logout</a>
-    </div>
-    <div class="footer">
-        <div class="footer-title">
-            <h2>NSS Voting Web Application</h2>
-        </div>
-    </div>
 </body>
 
 </html>
